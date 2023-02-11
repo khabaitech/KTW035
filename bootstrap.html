@@ -1,0 +1,347 @@
+<!DOCTYPE Html>
+<Html Lang="En">
+  <Head>
+    <Meta Charset="UTF-8" />
+    <Title>Personal Portfolio Website</Title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!----CSS Link----->
+    <Link Rel="Stylesheet" Href="Style.Css" />
+    <style type="text/css">@Import Url("Https://Fonts.Googleapis.Com/Css2?Family=Poppins:wght@400;500;600;700&Display=Swap");
+  </Head>
+  .portfolio:hover{
+
+       background-color: yellow; scale: 2.0;
+  }
+section {
+  padding: 5em 2em;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0 ;
+  width: 100%;
+  background-color:gray ;
+  color: white;
+  text-align: center;
+}
+
+.section__title--services {
+  color: var(--clr-accent);
+  position: relative;
+}
+.section__title--services::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.25;
+}
+
+.section__subtitle--intro {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+  }
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+trong {
+  font-weight: var(--fw-bold);
+}
+
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+* {
+  Margin: 0;
+  Padding: 0;
+  Box-Sizing: Border-Box;
+  Font-Family: "Poppins", Sans-Serif;
+}
+A {
+  Text-Decoration: None;
+}
+.Hero {
+  Width: 100%;
+  Height: 100vh;
+  Background: Url(Img/Bg.Png);
+  Background-Size: Cover;
+  background: voilet;
+}
+Nav {
+  Display: Flex;
+  Align-Items: Center;
+  Justify-Content: Space-Between;
+  Padding: 30px 100px;
+}
+.Logo {
+  Max-Height: 60px;
+}
+Nav Ul Li {
+  List-Style: None;
+  Display: Inline-Block;
+  Padding: 10px 20px;
+}
+Nav Ul Li A {
+  Color: #1d1d24;
+  Position: Relative;
+  Padding: 5px 0;
+}
+Nav Ul Li A:hover {
+  Color: #Fd4766;
+}
+Nav Ul Li A:after {
+  Content: "";
+  Position: Absolute;
+  Left: 0;
+  Width: 0;
+  Height: 3px;
+  Background: #Fd4766;
+  Transition: 0.3s;
+  Bottom: 0;
+}
+Nav Ul Li A:hover:after {
+  Width: 100%;
+}
+.Btn {
+  Color: #Fff;
+  Font-Size: 16px;
+  Text-Transform: Uppercase;
+  Letter-Spacing: 2px;
+  Padding: 16px 40px;
+  Border-Radius: 500px;
+  Display: Inline-Block;
+  Font-Weight: 500;
+  Transition: All 0.4s Ease-In-Out;
+  Background-Size: 152% 100%;
+  Background: #Fd4766;
+  Border: 2px Solid #Fd4766;
+}
+.Btn:hover {
+  Background: Transparent;
+  Border-Color: #Fd4766;
+  Color: #Fd4766;
+}
+.Content {
+  Position: Absolute;
+  Top: 80%;
+  Left: 8%;
+}
+
+.Content .Title {
+  Color: #0a0a0a;
+  Font-Size: 15px;
+  Text-Transform: Uppercase;
+  Letter-Spacing: 4px;
+  Display: Inline-Block;
+  Margin-Bottom: 20px;
+  background :linear-gradient(120deg
+    #1c99fe 20.69%
+    #7644ff 50.19%
+    #Fd4766 79.69%);
+    
+  
+  -Webkit-Background-Clip: Text;
+  -Webkit-Text-Fill-Color: Transparent;
+}
+.Content H1 {
+  Color: #1f1f25;
+  Font-Size: 75px;
+  Font-Weight: 900;
+  Line-Height: 90px;
+  Text-Transform: Inherit;
+  Width: 70%;
+}
+.Content H1 Span {
+  Color: #Fd4766;
+}
+.Content P {
+  Width: 55%;
+  Color: #202020;
+  Margin-Top: 20px;
+  Margin-Bottom:30px;
+} 
+
+.pk img{
+  height:100%;
+  width: 100%;
+  text-transform: uppercase;
+  background color: gray;
+  position: relative;
+  object-fit: cover;
+}
+.two{
+  transform: scale(0.2);
+}
+#work{
+  
+  width: 100%;
+  Background-Size: Cover;
+
+}
+
+
+#nav_2{
+ background:yellow;
+  position:fixed;
+  top:50%;
+  right:3px;
+font-size: 40px;
+padding: 20px;
+border: 5px solid black;
+border-radius: 20px 0px 0px 20px;
+
+
+}
+</style>
+
+  <Body>
+
+    <Div Class="Hero">
+      <Nav>
+        <Img Src="45.png" Class="Logo"/>
+        <Ul>
+          <Li><A Href="#Content">Home</A></Li>
+          <Li><A Href="#about">About</A></Li>
+          <Li><A Href="#work ">Educational details</A></Li>
+          <Li><A Href="resume.pdf">Portfolio</A></Li>
+          <Li><A Href="#">Blog</A></Li>
+          <Li><a href="#contact_h">Contact</a></Li>
+        </Ul>
+       
+      </Nav>
+<div class="pk">
+     <img src ="8.jpg" class="">
+    </div>
+      <Div Class="Content">
+       <Span Class="Title"></Span>
+        <H1 class="one">Hello, I’m <Span>Priya Ranjan Pandey</Span></H1>
+        <P>
+          <br>
+          <br>
+          Education is one of the basic necessities of life. It is directly related to learning and our overall development. Education has a very wide meaning; it not only educates you in your classroom but also encourages you to learn from your environment. Learning is an education in the real senss.
+        </P>
+        <br>
+        <br>
+        
+
+   
+  </section>
+  <!-- About me -->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about"> Web Developer interned from <H3>KHABAI TECH</H3>HAJIPUR,VAISHALI</p>
+
+    <div class="about-me__body">
+      <p>Hello! I AM PRIYA RANJAN PANDEY and I am curently doing my internship from KHABAI TECH at Hajipur ,Vaishali.It is a company  </p>
+    <center> <img src="priyanshu.png" style="width: 300px; height: 300px; left: 850px;"></center></div>
+
+    
+  </section>
+
+
+
+         
+<section>
+
+
+   <div id="Skills">
+    <h3 id="skills">Skills</h3>
+     <span>HTML = 60%</span>
+     <br>
+      <span>CSS = 60%</span>
+      <br>
+       <span>BOOTSTRAP = 35%</span>
+       <br>
+        <span>JAVA SCRIPT = 20%</span>
+
+   </div>
+               </section>
+<div id="nav_2">
+      
+         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a><br>
+
+         <a href="https://wa.link/gzekx3"><i class="fa-brands fa-whatsapp"></i></a><br>
+
+         <a href="https://www.linkedin.com/in/priya-ranjan-pandey-77989625a/"><i class="fa-brands fa-linkedin"></i></a><br>
+
+         <a href="https://web.telegram.org/k/"><i class="fa-brands fa-telegram"></i></a><br>
+      
+</div>
+<!--my educational background -->
+<section class="my-work" id="work">
+    <h2 class="section_title section_title--work text-white"><b> <strong><center>(:EDUCATION:)</center></b></strong></h2>
+
+    <p><center>INTERNSHIP IN WEB DEVELOPMENT</center>
+    </p>
+
+    <p>I HAVE COMPLETED MY INTERNSHIP IN <BIG>WEB TECHNOLOGY</BIG> FROM KHABAI TECH</p>
+ <h2 class="section_title section_title--work text-white"><b> <strong><center>(:DIPLOMA:)</center></b></strong></h2>
+    
+    <p>DIPLOMA IN COMPUTER SCIENCE & ENGINEERING FROM GOVERNMENT POLYTECHNIC COLLAGE</p>
+
+    <h2 class="section_title section_title--work text-white"><b> <strong><center>(:MATRICULATION:)</center></b></strong></h2>
+    <p>I HAVE DONE MY MATRICUATION FROM<b> BUDHA PUBLIC SCHOOL, EAST CHAMPARAN, BIHAR</b></p>
+<!-- My Work -->
+<hr>
+</section>
+  <section class="my-work" id="work">
+    <h2 class="section_title section_title--work text-white"><b> <strong><center>(: My work :)</center></b></strong></h2>
+    <p class="section_subtitle section_subtitle--work text-white"><h3 style="color:blueviolet;"><b>My completed projects :- </b></h3><hr style="background-color:white;"></p>
+
+    <div class="portfolio">
+      <!-- Portfolio item 01 -->
+     
+        
+      </div>
+    
+      <div id="portfolioimg">
+    <img src="car.gif" class="portfolioimg" style="height: 350px; width: 380px;">
+      
+        
+        <img src="heart32.gif" class="portfolioimg" style="width: 380px;height: 350px;">
+     
+        <img src="10.gif" class="portfolioimg" style="width: 380px;height: 350px;">
+        <br>
+        <br>
+      <img src="klo.png" class="portfolioimg" style="width: 300px;height: 300px;">
+    
+      
+        <img src="1.png" class="portfolioimg" style="width: 300px;height: 300px;padding: 5px;">
+      
+        <img src="2.png" class="portfolioimg" style="width: 300px;height: 300px;padding: 5px;">
+   
+        <img src="3.png" class="portfolioimg" style="width: 300px;height: 300px; padding: 5px;">
+    
+      </div>
+      <hr>
+    
+  </section><center><hr style="background-color:gray;">
+
+     <h2 id="contact_h">Contact Me</h2>
+    <form>
+       <input type="text" placeholder="your name"><br><br>
+        <input type="text" placeholder="your email"><br><br>
+       <input type="text" placeholder="Your Message"><br><br>
+    <br> 
+    <button  Class="Btn">send message</button>
+    </form> 
+    </center>
+    <br>
+ 
+</Div>
+
+</Body>
+</Html>
